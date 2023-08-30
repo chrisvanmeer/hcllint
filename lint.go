@@ -24,7 +24,6 @@ func main() {
 	} else {
 		for i, arg := range os.Args {
 			if i == 0 {
-				colorstring.Printf("[yellow]Either specify a file, a directory or - for stdin.")
 				continue
 			}
 			search := arg
