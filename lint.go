@@ -28,7 +28,7 @@ func main() {
 			}
 			search := arg
 			if info, err := os.Stat(arg); err == nil && info.IsDir() {
-				search = fmt.Sprintf("%s/*.tf", arg)
+				search = fmt.Sprintf("%s/*.hcl", arg)
 			}
 			files, err := filepath.Glob(search)
 			if err != nil {
