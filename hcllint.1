@@ -1,0 +1,20 @@
+." hcllint custom manual page
+."
+.TH hcllint 1
+
+.SH NAME
+.B hcllint
+- Lint HCL code
+
+.SH SYNOPSIS
+.B hcllint 
+[- < config_file]
+[directory]
+[config_file]
+
+.SH DESCRIPTION
+.B hcllint
+Lint's an arbitrary number of input arguments. If a directory is specified, it will check that directory for *.hcl files and run the linter on them as well. If the first argument is a '\-' it will read from stdin and ignore any following arguments.
+
+.SH AUTHOR
+Chris van Meer (c.v.meer@atcomputing.nl)
